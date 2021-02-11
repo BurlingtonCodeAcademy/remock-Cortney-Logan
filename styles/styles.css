@@ -89,6 +89,8 @@ figcaption{
 #main{
     margin-left: 20vw;
     margin-right: 20vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -155,6 +157,17 @@ cursor:pointer;
     box-shadow:rgba(168,168,167,.4) 2px 2px;
 }
 
+.send-message{
+    background-color: rgb(237,119,105);
+    color: white;
+    border: rgb(237,119,105);
+    border-radius: 3px;
+    display: inline-block;
+    width:150px;
+    height:25px;
+    box-shadow:rgba(168,168,167,.4) 2px 2px;  
+}
+
 /*----------lines----------*/
 .line-break{
     display: flex;
@@ -169,5 +182,33 @@ cursor:pointer;
     border-bottom: 1px solid rgba(168,168,167,.4);
 }
 
-/*----------main----------*/
+/*----------footer----------*/
+#footer{
+    background-color:rgba(168,168,167,.4);
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+#footer h4{
+    text-align: center;
+}
+
+footer{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    display:flex;
+    justify-content: space-between;
+}
+
+#form{
+    width: 50vw;
+    display: grid;
+}
+
+#contact-information{
+    width: 50vw;
+    display: grid;
+}
+
+
 
