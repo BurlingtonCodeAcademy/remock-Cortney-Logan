@@ -27,7 +27,6 @@ header > h4{
     text-size: .75rem;
 }
 
-
 /*----------features (home page only)----------*/
 #features{
     margin-left: 20vw;
@@ -86,6 +85,26 @@ figcaption{
     align-items: center;
 }
 
+/*----------main----------*/
+#main{
+    margin-left: 20vw;
+    margin-right: 20vw;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#main-content{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar{
+    width: 16vw;
+    display:flex;
+    flex-direction: column;
+}
 
 /*----------buttons----------*/
 button:hover{
@@ -102,6 +121,40 @@ cursor:pointer;
     height:25px;
     box-shadow:rgba(168,168,167,.4) 2px 2px;
 }
+
+.continue-reading{
+    background-color: rgb(237,119,105);
+    color: white;
+    border: rgb(237,119,105);
+    border-radius: 3px;
+    display: inline-block;
+    width:150px;
+    height:25px;
+    box-shadow:rgba(168,168,167,.4) 2px 2px;
+}
+
+.blog-post-date{
+    background-color: rgb(168,168,167);
+    color: white;
+    border: rgb(237,119,105);
+    border-radius: 3px;
+    display: inline-block;
+    width:60px;
+    height:25px;
+    box-shadow:rgba(168,168,167,.4) 2px 2px;
+}
+
+.learn-more{
+    background-color: rgb(237,119,105);
+    color: white;
+    border: rgb(237,119,105);
+    border-radius: 3px;
+    display: inline-block;
+    width:100px;
+    height:25px;
+    box-shadow:rgba(168,168,167,.4) 2px 2px;
+}
+
 /*----------lines----------*/
 .line-break{
     display: flex;
