@@ -20,10 +20,15 @@ header > h1 {
   text-shadow: rgba(168, 168, 167, 0.4) 2px 2px;
 }
 
-header > h4 {
+header > h4{
   text-align: center;
   margin: 10px;
   text-size: 0.75rem;
+}
+
+header a:link {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /*----------features (home page only)----------*/
@@ -103,15 +108,22 @@ figcaption {
   flex-direction: column;
 }
 
+
+#main-content img {
+  border: 3px solid rgba(168, 168, 167, 0.4);
+  width: 40vw;
+}
+
+/*Blog Post Page Only*/
+
 #main .blog-post-page{
     width: 60vw;
   display: flex;
   flex-direction: column;
 }
 
-#main-content img {
-  border: 3px solid rgba(168, 168, 167, 0.4);
-  width: 40vw;
+#main .blog-post-page h4{
+  text-align: center;
 }
 
 #main .blog-post-page img {
@@ -224,6 +236,32 @@ button:hover {
   height: 40px;
   box-shadow: rgba(168, 168, 167, 0.4) 2px 2px;
   margin: 15px 0 0 0;
+}
+
+
+/*----------links----------*/
+a:link{
+  text-decoration: none;
+}
+
+a:hover .learn-more{
+  background-color: rgba(237, 119, 105, 0.5);
+}
+
+a:hover .continue-reading{
+  background-color: rgba(237, 119, 105, 0.5);
+}
+
+a:hover .tell-me-more{
+  background-color: rgba(237, 119, 105, 0.5);
+}
+
+a:hover .send-message{
+  background-color: rgba(237, 119, 105, 0.5);
+}
+
+a:hover .blog-post-date{
+  background-color: rgba(168, 168, 167, 0.5);
 }
 
 /*----------lines----------*/
@@ -362,7 +400,6 @@ footer p {
   grid-row: 5/6;
   grid-column: 2/3;
 }
-
 
 #attribution{
   font-size: 8px;
