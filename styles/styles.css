@@ -13,6 +13,7 @@ body {
 /*----------header----------*/
 header {
   margin: 80px;
+  position: relative;
 }
 
 header h1 {
@@ -479,4 +480,15 @@ footer p {
   font-size: .75rem;
   padding: 10px;
   text-align: right; 
+}
+
+/*----------Animation----------*/
+.animation {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.animation img{
+  width: 20px;
 }
