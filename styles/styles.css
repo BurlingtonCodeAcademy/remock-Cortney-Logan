@@ -134,6 +134,11 @@ font-size: 3rem;
   width: calc(40vw - 6px);
 }
 
+#main-content iframe {
+  border: 3px solid rgba(168, 168, 167, 0.4);
+  width: calc(40vw - 6px);
+}
+
 /*Blog Post Page Only*/
 
 #main .blog-post-page {
@@ -163,6 +168,7 @@ font-size: 3rem;
   border: 3px solid rgba(168, 168, 167, 0.4);
   float: left;
   margin-right: 10px;
+  width: 100px;
 }
 
 p {
@@ -483,12 +489,24 @@ footer p {
 }
 
 /*----------Animation----------*/
-.animation {
+.animation-container {
   position: absolute;
   height: 100vh;
-  width: 100vw;
+  width: 10vw;
+  border: 2px solid red;
 }
 
-.animation img{
+.animation-container img{
   width: 20px;
+}
+
+#paw-print-one{
+  position: absolute;
+  animation: move 10s linear 1;
+}
+
+@keyframes move{
+  0% {top: 75px; left: 0;}
+  50% {top: 125px; left: 20vw;}
+  100% {top: 75px; left: 0}
 }
