@@ -1,7 +1,10 @@
 /*----------body----------*/
-@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400&display=swap"); /*font-family: 'Amatic SC', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap'); /*Amatic: font-family: Verdana, Geneva, Tahoma, sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');/*font-family: 'Open Sans', sans-serif;*/
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: rgb(99, 99, 101);
   margin: 0;
   line-height: 1.5;
@@ -13,18 +16,19 @@ header {
 }
 
 header h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: 'Amatic SC', cursive;
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
   margin: 10px;
   color: rgb(237, 119, 105);
   text-shadow: rgba(168, 168, 167, 0.4) 2px 2px;
 }
 
 header h4 {
+  font-family: 'Amatic SC', cursive;
   text-align: center;
   margin: 10px;
-  font-size: 0.75rem;
+  font-size: 1.5rem;
 }
 
 h1 a {
@@ -40,10 +44,12 @@ h1 a {
   flex-direction: column;
   align-items: center;
   margin: 80px;
+  
 }
 
 #features h4 {
-  font-size: 1rem;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
 }
 
 #feature-img {
@@ -62,7 +68,7 @@ figure {
 
 figcaption {
   margin: 30px;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 
 #feature-img-one {
@@ -81,6 +87,7 @@ figcaption {
 
 /*----------block quote (home page only)----------*/
 #quote {
+  font-family: 'Amatic SC', cursive;
   background-color: rgba(168, 168, 167);
   margin: 0px;
   display: flex;
@@ -88,6 +95,7 @@ figcaption {
   height: 200px;
   justify-content: center;
   align-items: center;
+font-size: 3rem;
 }
 
 /*----------main----------*/
@@ -99,6 +107,17 @@ figcaption {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+#main h4{
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+}
+
+#main h5{
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5rem;
 }
 
 /*----------main content----------*/
@@ -111,7 +130,7 @@ figcaption {
 
 #main-content img {
   border: 3px solid rgba(168, 168, 167, 0.4);
-  width: 40vw;
+  width: calc(40vw - 6px);
 }
 
 /*Blog Post Page Only*/
@@ -124,6 +143,7 @@ figcaption {
 
 #main .blog-post-page h4 {
   text-align: center;
+  font-size: 2rem;
 }
 
 #main .blog-post-page img {
@@ -146,6 +166,7 @@ figcaption {
 
 p {
   margin: 0 0 15px 0;
+  font-size: 1rem;
 }
 
 /*----------buttons----------*/
@@ -153,6 +174,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5rem;
 }
 
 button img {
@@ -218,7 +241,7 @@ button:hover{
   border-radius: 3px;
   display: inline-block;
   width: 60px;
-  height: 25px;
+  height: 30px;
   box-shadow: rgba(168, 168, 167, 0.4) 2px 2px;
   margin: 15px 0 0 0;
 }
@@ -302,10 +325,13 @@ color: rgb(237, 119, 105);
 #footer {
   background-color: rgba(168, 168, 167, 0.4);
   padding-top: 50px;
+  font-size: 1rem;
 }
 
 #footer h4 {
   text-align: center;
+  font-size: 2rem;
+  font-family: 'Amatic SC', cursive;
 }
 
 footer {
@@ -323,7 +349,7 @@ footer {
   display: grid;
   grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
 }
 
 #form-name {
@@ -339,6 +365,7 @@ footer {
 #form-message {
   grid-row: 2/3;
   grid-column: 1/3;
+  font-family: 'Open Sans', sans-serif;
 }
 
 input, textarea{
@@ -449,7 +476,7 @@ footer p {
 
 /*----------Attribution----------*/
 #attribution {
-  font-size: 10px;
+  font-size: .75rem;
   padding: 10px;
-  text-align: right;
+  text-align: right; 
 }
