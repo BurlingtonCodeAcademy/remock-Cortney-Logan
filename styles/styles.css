@@ -319,8 +319,9 @@ footer {
 /* Form */
 #form {
   width: 27.5vw;
+  height: 35vh;
   display: grid;
-  grid-template-rows: 1fr 4fr 0.5fr;
+  grid-template-rows: 1fr 4fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 0.5rem;
 }
@@ -350,45 +351,6 @@ input, textarea{
 
 input[type=text]:focus, textarea:focus{
   border: 3px solid rgba(168, 168, 167, 0.8);
-}
-
-/*Notification pop up*/
-/* hidden notification */
-.notification {
-  display: none;
-}
-
-/* display notification */
-.notification:target {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* notification content */
-#notification-message{
-  border: 3px solid rgb(237, 119, 105);
-  border-radius: 5px;
-  background-color: white;
-  padding: 10px;
-}
-
-#notification-message h4{
-  text-align: center;
-}
-
-#notification-message p {
-  text-align: center;
-  padding: 10px;
-}
-
-#notification-message #close{
-  text-align: right;
 }
 
 /* contact information */
@@ -446,6 +408,46 @@ footer p {
   grid-column: 2/3;
 }
 
+/*----------Notification Pop Up----------*/
+/* hidden notification */
+.notification {
+  display: none;
+}
+
+/* display notification */
+.notification:target {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* notification content */
+#notification-message{
+  border: 3px solid rgb(237, 119, 105);
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+
+#notification-message h4{
+  text-align: center;
+}
+
+#notification-message p {
+  text-align: center;
+  padding: 10px;
+}
+
+#notification-message #close{
+  text-align: right;
+}
+
+/*----------Attribution----------*/
 #attribution {
   font-size: 10px;
   padding: 10px;
