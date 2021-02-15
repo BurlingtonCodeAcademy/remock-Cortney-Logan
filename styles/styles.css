@@ -1,14 +1,13 @@
 /*----------body----------*/
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap'); /*font-family: 'Amatic SC', cursive;*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');/*font-family: 'Open Sans', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"); /*font-family: 'Amatic SC', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"); /*font-family: 'Open Sans', sans-serif;*/
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: rgb(99, 99, 101);
   margin: 0;
   line-height: 1.5;
 }
-
 
 /*----------header----------*/
 header {
@@ -17,7 +16,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   text-align: center;
   font-size: 5rem;
   margin: 10px;
@@ -26,7 +25,7 @@ header h1 {
 }
 
 header h4 {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   text-align: center;
   margin: 10px;
   font-size: 1.5rem;
@@ -45,11 +44,10 @@ h1 a {
   flex-direction: column;
   align-items: center;
   margin: 80px;
-  
 }
 
 #features h4 {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 2rem;
 }
 
@@ -88,7 +86,7 @@ figcaption {
 
 /*----------block quote (home page only)----------*/
 #quote {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   background-color: rgba(168, 168, 167);
   margin: 0px;
   display: flex;
@@ -96,7 +94,7 @@ figcaption {
   height: 200px;
   justify-content: center;
   align-items: center;
-font-size: 3rem;
+  font-size: 3rem;
 }
 
 /*----------main----------*/
@@ -111,13 +109,13 @@ font-size: 3rem;
   font-size: 1.5rem;
 }
 
-#main h4{
-  font-family: 'Amatic SC', cursive;
+#main h4 {
+  font-family: "Amatic SC", cursive;
   font-size: 2rem;
 }
 
-#main h5{
-  font-family: 'Amatic SC', cursive;
+#main h5 {
+  font-family: "Amatic SC", cursive;
   font-size: 1.5rem;
 }
 
@@ -133,7 +131,6 @@ font-size: 3rem;
   border: 3px solid rgba(168, 168, 167, 0.4);
   width: calc(40vw - 6px);
 }
-
 
 #main-content iframe {
   border: 3px solid rgba(168, 168, 167, 0.4);
@@ -182,7 +179,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 1.5rem;
 }
 
@@ -192,7 +189,7 @@ button img {
   margin-right: 10px;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   background-color: rgba(237, 119, 105, 0.5);
 }
@@ -276,7 +273,7 @@ button:hover{
 }
 
 /*----------links----------*/
-a{
+a {
   color: inherit;
 }
 
@@ -284,8 +281,8 @@ a:link {
   text-decoration: none;
 }
 
-a:hover{
-color: rgb(237, 119, 105);
+a:hover {
+  color: rgb(237, 119, 105);
 }
 
 /*----------lines----------*/
@@ -339,7 +336,7 @@ color: rgb(237, 119, 105);
 #footer h4 {
   text-align: center;
   font-size: 2rem;
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
 }
 
 footer {
@@ -373,10 +370,11 @@ footer {
 #form-message {
   grid-row: 2/3;
   grid-column: 1/3;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-input, textarea{
+input,
+textarea {
   padding: 10px;
   border-radius: 3px;
   border: 3px solid rgba(168, 168, 167, 0.4);
@@ -384,7 +382,8 @@ input, textarea{
   outline: none;
 }
 
-input[type=text]:focus, textarea:focus{
+input[type="text"]:focus,
+textarea:focus {
   border: 3px solid rgba(168, 168, 167, 0.8);
 }
 
@@ -462,14 +461,14 @@ footer p {
 }
 
 /* notification content */
-#notification-message{
+#notification-message {
   border: 3px solid rgb(237, 119, 105);
   border-radius: 5px;
   background-color: white;
   padding: 10px;
 }
 
-#notification-message h4{
+#notification-message h4 {
   text-align: center;
 }
 
@@ -478,37 +477,254 @@ footer p {
   padding: 10px;
 }
 
-#notification-message #close{
+#notification-message #close {
   text-align: right;
 }
 
 /*----------Attribution----------*/
-#attribution p{
-  font-size: .75rem;
+#attribution p {
+  font-size: 0.75rem;
   padding: 10px;
-  text-align: right; 
+  text-align: right;
   margin: 0;
 }
 
 /*----------Animation----------*/
 .animation-container {
   position: absolute;
-  height: 100vh;
-  width: 10vw;
-  border: 2px solid red;
+  height: 10vh;
+  width: calc(40vw - 25px);
+  top: 250px;
+  left: 725px;
 }
 
-.animation-container img{
+.animation-container img {
   width: 20px;
 }
 
-#paw-print-one{
-  position: absolute;
-  animation: move 10s linear 1;
+.pawprint {
+  transform: rotate(90deg);
 }
 
-@keyframes move{
-  0% {top: 75px; left: 0;}
-  50% {top: 125px; left: 20vw;}
-  100% {top: 75px; left: 0}
+#paw-print-one {
+  position: absolute;
+  top: 30px;
+  animation: move-one 5s linear infinite;
 }
+
+#paw-print-two {
+  position: absolute;
+  top: 0px;
+  right: calc(40vw - 80px);
+  animation: move-two 5s linear infinite;
+}
+
+#paw-print-three {
+  position: absolute;
+  top: 30px;
+  right: calc(40vw - 120px);
+  animation: move-three 5s linear infinite;
+}
+
+#paw-print-four {
+  position: absolute;
+  top: 0px;
+  right: calc(40vw - 160px);
+  animation: move-four 5s linear infinite;
+}
+
+#paw-print-five {
+  position: absolute;
+  top: 30px;
+  right: calc(40vw - 200px);
+  animation: move-five 5s linear infinite;
+}
+
+#paw-print-six {
+  position: absolute;
+  top: 0px;
+  right: calc(40vw - 240px);
+  animation: move-six 5s linear infinite;
+}
+
+#paw-print-seven {
+  position: absolute;
+  top: 30px;
+  right: calc(40vw - 280px);
+  animation: move-seven 5s linear infinite;
+}
+
+#paw-print-eight {
+  position: absolute;
+  top: 0px;
+  right: calc(40vw - 320px);
+  animation: move-eight 5s linear infinite;
+}
+
+#paw-print-nine {
+  position: absolute;
+  top: 30px;
+  right: calc(40vw - 360px);
+  animation: move-nine 5s linear infinite;
+}
+
+#paw-print-ten {
+  position: absolute;
+  top: 0px;
+  right: calc(40vw - 400px);
+  animation: move-ten 5s linear infinite;
+}
+
+#paw-print-eleven {
+  position: absolute;
+  top: 30px;
+  right: calc(40vw - 440px);
+  animation: move-eleven 5s linear infinite;
+}
+
+@keyframes move-one {
+  0% {visibility:visible;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+
+@keyframes move-two {
+  0% {visibility:hidden;} 
+  10% {visibility:visible;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+
+@keyframes move-three {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:visible;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+
+@keyframes move-four {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:visible;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+@keyframes move-five {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:visible;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+@keyframes move-six {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:visible;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+@keyframes move-seven {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:visible;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+@keyframes move-eight {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:visible;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+@keyframes move-nine {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:visible;}
+  90% {visibility:hidden;}
+  100% {visibility:hidden;}
+}
+@keyframes move-ten {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:visible;}
+  100% {visibility:hidden;}
+}
+@keyframes move-eleven {
+  0% {visibility:hidden;} 
+  10% {visibility:hidden;}
+  20% {visibility:hidden;}
+  30% {visibility:hidden;}
+  40% {visibility:hidden;}
+  50% {visibility:hidden;}
+  60% {visibility:hidden;}
+  70% {visibility:hidden;}
+  80% {visibility:hidden;}
+  90% {visibility:hidden;}
+  100% {visibility:visible;}
+} 
