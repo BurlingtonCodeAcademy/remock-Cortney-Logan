@@ -484,10 +484,11 @@ footer p {
 }
 
 /*----------Attribution----------*/
-#attribution {
+#attribution p{
   font-size: .75rem;
   padding: 10px;
   text-align: right; 
+  margin: 0;
 }
 
 /*----------Animation----------*/
